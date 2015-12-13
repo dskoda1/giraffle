@@ -1,22 +1,33 @@
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+#####Build instructions
 
+Ensure modules are installed with:
 
-Welcome to your Node.js project on Cloud9 IDE!
+`npm install`
 
-This chat example showcases how to use `socket.io` with a static `express` server.
+Start a mongo session in one terminal with: 
 
-## Running the server
+`./mongod`
 
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
+You might need to follow these instructions to set up Mongo
+in C9 properyly: 
+https://docs.c9.io/docs/setting-up-mongodb
 
-2) Alternatively you can launch the app from the Terminal:
+Run the server with:
 
-    $ node server.js
+`node server.js`
 
-Once the server is running, open the project in the shape of 'https://projectname-username.c9.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+And you're all set up to run!
+
+Hosted right where it always is at either:
+Locally: 
+
+`http://localhost:3000/`
+
+Or if running in a c9 container:
+
+`http://<workspacename>-<username>.c9users.io/`
+
+aka
+
+`http://giraffle-<username>.c9users.io/`
