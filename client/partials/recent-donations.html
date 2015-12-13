@@ -1,0 +1,10 @@
+
+<h3>Recent Donations</h3>
+
+
+<div ng-repeat="donation in donationCtrl.donations" class="recentDonation">
+    
+    {{donation.email}}
+    <strong>${{donation.amount}}</strong>
+    
+</div>
