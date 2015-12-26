@@ -2,17 +2,22 @@
     var app = angular.module('donation-directives', []);
 
     //Controller and Directive for the donation page
-   
     app.directive('donationPage', function(){
         return{
             restrict: 'E',
             templateUrl: '/partials/donation-page.html',
-            controller: function(){
-                this.donations = donations;
-                
-                
+            controller: function($http){
+            $http.get('/api/donation')
+                .success(function(data) {
+                    this.donations = data;
+                    console.log(data);
+                })
+                .error(function(data) {
+                    console.log('Error: ' + data);
+                });
+                //this.donations = donations;
             },
-            controllerAs: 'donationCtrl'
+            controllerAs: 'donationCtrl',
         };
     })
 

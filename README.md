@@ -10,7 +10,7 @@ Start a mongo session in one terminal with:
 `./mongod`
 
 You might need to follow these instructions to set up Mongo
-in C9 properyly: 
+in C9 properly: 
 https://docs.c9.io/docs/setting-up-mongodb
 
 Run the server with:
